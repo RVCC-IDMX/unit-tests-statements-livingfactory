@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return */
 /*
  * stmnts-06.js
  * Language: javascript
@@ -12,7 +13,15 @@
  * @returns {boolean} true if str is a string
  */
 function isString(str) {
-  // write your code here & return
+  if (typeof str === 'string')
+  {
+    return true
+  }
+  else
+  {
+    return false;
+  }
+
 }
 
 /**
@@ -21,7 +30,14 @@ function isString(str) {
  * @returns {boolean}  - true if str is blank (empty)
  */
 function isBlank(str) {
-  // write your code here & return
+  if (str.length === 0)
+  {
+    return true
+  }
+  else
+  {
+    return false;
+  }
 }
 
 /**
@@ -33,7 +49,14 @@ function isBlank(str) {
  * @returns {string} - the name of the person
  */
 function sayHelloOrBye(name, num) {
-  // write your code here & return
+  if (num === 0)
+  {
+    return `Hello ${name}`;
+  }
+  else
+  {
+    return `Bye ${name}`
+  }
 }
 
 /**
@@ -44,7 +67,14 @@ function sayHelloOrBye(name, num) {
  * ? [JavaScript: The Definitive Guide, Chapter 4.9.2](https://bit.ly/3Cvjcw2)
  */
 function compareStrings(str1, str2) {
-  // write your code here & return
+  if (str1 === str2)
+  {
+    return true
+  }
+  else
+  {
+    return false;
+  }
 }
 
 module.exports = {

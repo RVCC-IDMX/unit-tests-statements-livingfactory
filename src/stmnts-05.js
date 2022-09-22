@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return */
 /*
  * stmnts-05.js
  * Language: javascript
@@ -12,7 +13,14 @@
  * @returns {boolean} - true if num is odd, false otherwise
  */
 function isOdd(num) {
-  // write your code here & return
+  if (num % 2 !== 0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 /**
@@ -21,7 +29,14 @@ function isOdd(num) {
  * @returns {boolean} - true if num is even, false otherwise
  */
 function isEven(num) {
-  // write your code here & return
+  if (num % 2 === 0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 /**
@@ -30,7 +45,14 @@ function isEven(num) {
  * @returns {boolean} - true if value is a negative number, false otherwise
  */
 function isNegative(value) {
-  // write your code here & return
+  if (value + 1 <= 0)
+  {
+    return true;
+  }
+  else
+  {
+    return false;
+  }
 }
 
 module.exports = {

@@ -4,15 +4,15 @@ const {
 } = require('../src/stmnts-04');
 
 test('fahrenheitToCelsius', () => {
-  expect(fahrenheitToCelsius(32)).toBe(0);
-  expect(fahrenheitToCelsius(212)).toBe(100);
-  expect(fahrenheitToCelsius(0)).toBe(-17.78);
-  expect(fahrenheitToCelsius(40.25)).toBe(4.58);
+  expect(fahrenheitToCelsius(32)).toBeCloseTo(0);
+  expect(fahrenheitToCelsius(212)).toBeCloseTo(100);
+  expect(fahrenheitToCelsius(0)).toBeCloseTo(-17.78);
+  expect(fahrenheitToCelsius(40.25)).toBeCloseTo(4.58);
 });
 
 test('celsiusToFahrenheit', () => {
-  expect(celsiusToFahrenheit(0)).toBe(32);
-  expect(celsiusToFahrenheit(100)).toBe(212);
-  expect(celsiusToFahrenheit(-17.78)).toBe(-0);
-  expect(celsiusToFahrenheit(20.25)).toBe(68.45);
+  expect(celsiusToFahrenheit(0)).toBeCloseTo(32);
+  expect(celsiusToFahrenheit(100)).toBeCloseTo(212);
+  expect(celsiusToFahrenheit(-17.78)).toBeCloseTo(-0);
+  expect(celsiusToFahrenheit(20.25)).toBeCloseTo(68.45);
 });
